@@ -8,21 +8,14 @@
 <body>
 Test *********************************************
 <!-- Place this file into the folder ...ServicePattern\Web\webapps\agentdesktop, 
-use URL, for example, https://win2008ap1.bugfocus.com/agentdesktop/TestB.html in Web Screen Pop block -->
+use URL, for example, https://apcentos73.bugfocus.com/agentdesktop/TestJS.html in Web Screen Pop block -->
 <form>
 	<p><button type="button" onclick="testAlert()">Test Script support</button>
 	<p><button type="button" onclick="window.bpspat.api.dialNumber('2034')">Dial 2034</button>
-	<p><button type="button" onclick="window.bpspat.api.startCallRecording()">Start Recording</button>
-	<p><button type="button" onclick="window.bpspat.api.muteCallRecording()">Mute Recording</button>	
-	<p><button type="button" onclick="window.bpspat.api.stopCallRecording()">Stop Recording</button>
-	<p><button type="button" onclick="window.bpspat.api.unmuteCallRecording()">Unmute Recording</button>	
+	<p><button type="button" onclick="window.bpspat.api.setDispositionByName('Product sold')">Set Disposition Product sold</button>	
+	<p><button type="button" onclick="window.bpspat.api.completeInteraction()">Complete</button>	
 	<p><button type="button" onclick="window.bpspat.api.setNotes('Test Notes 12345')">Set Notes</button>
-	<p><button type="button" onclick="window.bpspat.api.setDisposition('100')">Set Disposition 100</button>
-	<p><button type="button" onclick="window.bpspat.api.completeInteraction()">Complete</button>
-	<p><button type="button" onclick="window.bpspat.api.completeInteractionWithDisp('100', 'Test Notes 12345')">Set Disposition 100 and Notes, Complete</button>
-	<p><button type="button" onclick="window.bpspat.api.stopScreenRecording()">Stop Screen Recording</button>
-	<p><button type="button" onclick="window.bpspat.api.pauseScreenRecording()">Pause Screen Recording</button>
-	<p><button type="button" onclick="window.bpspat.api.resumeScreenRecording()">Resume Screen Recording</button>	
+        <p><button type="button" onclick="window.bpspat.api.postVariable('test1', 'value1')">Set Variable</button>
 </form>
 **************************************************
 <script>
